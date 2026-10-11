@@ -6,33 +6,146 @@
 <meta name="author" content="Dustin Beasley">
 <meta charset="UTF-8">
 <link rel="stylesheet" type="text/css" href="styles.css"><!-- Added link to CSS page for wrapping text around images-->
+<style>
+  .page-heading {
+    text-align: center;
+    border: 1px solid black;
+  }
+
+  .mission-statement {
+    font-style: italic;
+  }
+
+  .features-intro {
+    color: red;
+  }
+
+  .about-link {
+     padding: 3px;
+    background: blue;
+    color: white;
+    border-radius: 3px;
+    text-decoration: none;
+    transition: background-color 0.5s ease;
+  }
+
+  .about-link:hover {
+    background: pink;
+  }
+
+  .mission-link {
+     padding: 3px;
+    background: blue;
+    color: white;
+    border-radius: 3px;
+    text-decoration: none;
+    transition: background-color 0.5s ease-in;
+  }
+
+  .mission-link:hover {
+    background: darkblue;
+  }
+
+  .nav-link {
+    padding: 3px;
+    background: blue;
+    color: white;
+    border-radius: 3px;
+    text-decoration: none;
+    transition: background-color 0.5s ease-in-out;
+  }
+  .nav-link:hover {
+    background: red;
+  }
+
+  .contact-link {
+     padding: 3px;
+    background: blue;
+    color: white;
+    border-radius: 3px;
+    text-decoration: none;
+    transition: background-color 0.5s linear;
+  }
+  .contact-link:hover {
+    background: green;
+  }
+</style>
 </head>
 <body>
-<audio controls>
+<audio controls class="transform-audio">
   <source src="nature.mp3" type="audio/mpeg"><!--audio source for nature sounds-->
   </audio>
-  <audio controls>
+  <audio controls class="transform-audio">
   <source src="forest.mp3" type="audio/mpeg"><!--audio source for forest sounds-->
   Your browser does not support the audio element.
   
 </audio>
-<h1 style="text-align: center; border: 1px solid black;">About this Page</h1><!--Put a border around the heading-->
+<h1 class="page-heading">About this Page</h1><!--Put a border around the heading-->
 <p>I am a webpage with <em>intent</em><!-- Emphasised intent here to demonstrate purpose.--> to provide a way for users to view and post videos about themselves and the world.</p>
-<p style="font-style: italic;"><!--All of this text shouls be italicized-->We aim to create a community where the beauty of the world is shared and loved everyday</p>
+<p class="mission-statement"><!--All of this text shouls be italicized-->We aim to create a community where the beauty of the world is shared and loved everyday</p>
 
-<p style="color: red;"><!--All of this text should be red-->Below are some site features!</p>
+<p class="features-intro"><!--All of this text should be red-->Below are some site features!</p>
 <ul>
 <li>View and post videos about yourself and the world</li>
 <li>Engage with a community that appreciates the beauty of the world</li>
 <li>Share your experiences and stories through multimedia content</li>
 <li>Discover inspiring content from other users</li>
 </ul>
-<iframe width="560" height="315" src="https://www.youtube.com/embed/FcMqTYI9Dc4?si=AGjTlCxmIOFiJDQN"><!--Youtube video player1-->
- title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
- referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-<iframe width="560" height="315" src="https://www.youtube.com/embed/JkaxUblCGz0?si=A4T3dV7fylLSnXlv?cc_load_policy=1"> <!--Youtube video player 2.-->
-title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+<!--
+Cited code.
+Author: Waatz Developer
+Date: June 22, 2022.
+Type: Video Grid Youtube Style.
+URL: https://www.youtube.com/watch?v=kLVDWXIyakg&t=124s-->
+<div class="video-grid">
+        
+        <!-- Video Card 1 -->
+        <div class="video-card">
+            <div class="video-wrapper">
+      
+                <iframe src="https://www.youtube.com/embed/FcMqTYI9Dc4?si=AGjTlCxmIOFiJDQN" allowfullscreen></iframe>
+            </div>
+            <div class="video-info">
+                <h3 class="video-title"></h3>
+                <p class="video-author"></p>
+                <p class="video-stats">150K views • 2 days ago</p>
+            </div>
+        </div>
+        <div class="video-card">
+            <div class="video-wrapper">
+      
+                <iframe src="https://www.youtube.com/embed/FcMqTYI9Dc4?si=AGjTlCxmIOFiJDQN" allowfullscreen></iframe>
+            </div>
+            <div class="video-info">
+                <h3 class="video-title"></h3>
+                <p class="video-author"></p>
+                <p class="video-stats">150K views • 2 days ago</p>
+            </div>
+        </div>
+        <div class="video-card">
+            <div class="video-wrapper">
+      
+                <iframe src="https://www.youtube.com/embed/FcMqTYI9Dc4?si=AGjTlCxmIOFiJDQN" allowfullscreen></iframe>
+            </div>
+            <div class="video-info">
+                <h3 class="video-title"></h3>
+                <p class="video-author"></p>
+                <p class="video-stats">150K views • 2 days ago</p>
+            </div>
+        </div>
+        <div class="video-card">
+            <div class="video-wrapper">
+      
+                <iframe src="https://www.youtube.com/embed/JkaxUblCGz0?si=A4T3dV7fylLSnXlv?cc_load_policy=1" allowfullscreen></iframe>
+            </div>
+            <div class="video-info">
+                <h3 class="video-title"></h3>
+                <p class="video-author"></p>
+                <p class="video-stats">150K views • 2 days ago</p>
+            </div>
+        </div>
+        </div>  
 
 <div class="container">
     <img src="https://burst.shopifycdn.com/photos/yellow-trees-of-a-fall-forest-at-sunset.jpg?height=182&format=pjpg&exif=0&iptc=0" width="10%" height="10%" alt=""><!-- 100% images were too big, changed to 10%-->
@@ -49,10 +162,10 @@ referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
   <p>Navigate to our other pages!</p>
   <nav> 
     <ul>
-    <li><a href="about.html" style="color: blue;">About Me</a></li><!-- Footer added to link to sitemap.-->
-    <li><a href="purpose.html" style="font-weight: bold;">Our Mission!</a></li>
-    <li><a href="sitemap2.html" style="padding: 10px; background: blue; color: white; border-radius: 5px; text-decoration: none;">Nav Page</a></li>
-    <li><a href="contact.html" style="font-style: oblique;">Contact info</a></li>
+    <li><a href="about.html" class="about-link">About Me</a></li><!-- Footer added to link to sitemap.-->
+    <li><a href="purpose.html" class="mission-link">Our Mission!</a></li>
+    <li><a href="sitemap2.html" class="nav-link">Nav Page</a></li>
+    <li><a href="contact.html" class="contact-link">Contact info</a></li>
     </ul>
   </nav>
   
