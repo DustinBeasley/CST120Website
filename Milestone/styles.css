@@ -42,6 +42,7 @@ URL: https://www.youtube.com/watch?v=kLVDWXIyakg&t=124s*/
     gap: 20px; /* Space between the cards */
     padding: 20px;
     font-family: Arial, sans-serif;
+justify-content: right;
 }
 
 /* 2. The Individual Card */
@@ -113,4 +114,8 @@ URL: https://www.youtube.com/watch?v=kLVDWXIyakg&t=124s*/
 .about-link:hover {
   background-color: #2980b9;
   transition: background-color 0.3s;
+}
+.left-aligned-table {
+  margin-left: 0;
+  margin-right: auto;
 }
